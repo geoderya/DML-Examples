@@ -1,0 +1,21 @@
+List<Account> multiAcc= New List<Account>();
+
+for (Integer i=1;i<=10;i++){
+ Account singleAcc = New Account();   
+singleAcc.Name='Loop Account '+i;
+// system.debug('singleAcc : '+singleAcc);
+
+    multiAcc.add(singleAcc);
+    
+}
+
+
+// system.debug('List : '+multiAcc);
+
+
+insert multiAcc;
+
+for(Account acc:multiAcc ){
+    
+    system.debug(acc.id+' id Account created succesfully');
+}
